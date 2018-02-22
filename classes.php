@@ -1,3 +1,4 @@
+<?php
 class $Car
 {
 	private $vendor;
@@ -12,7 +13,7 @@ class $Car
 		$this->color = $color;
 	}
 	
-	public futction startEngine(){
+	public function startEngine(){
 		
 	}
 	
@@ -34,11 +35,11 @@ class $Tv
 		$this->screenSize = $screenSize;
 	}
 	
-	public futction nextChannel(){
+	public function nextChannel(){
 		$this->channel++;
 	}
 	
-	public futction prevChannel(){
+	public function prevChannel(){
 		$this->channel--;
 	}
 }
@@ -53,8 +54,8 @@ class $Pen
 		$this->price = $price;
 	}
 	
-	public futction getPrice(){
-		return $this->price = $price;
+	public function getPrice(){
+		return $this->price;
 	}
 }
 
@@ -68,15 +69,15 @@ class $Duck
 		$this->sex = $sex;
 	}
 	
-	public futction sayQuack(){
+	public function sayQuack(){
 
 	}
 	
-	public futction takeoff(){
+	public function takeoff(){
 
 	}
 	
-	public futction landing(){
+	public function landing(){
 
 	}
 }
@@ -93,7 +94,9 @@ class $Goods
 		$this->price = $price;
 	}
 	
-	public futction getPrice(){
+	public function getPrice(){
 		return $this->price;
 	}	
 }
+
+?>
