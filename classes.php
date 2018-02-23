@@ -7,7 +7,7 @@ class $Car
 	private $velocity = 0;
 	private $acceleration = 0;
 	
-	public function __constructor($vendor,$model,$color){
+	public function __construct($vendor,$model,$color){
 		$this->vendor = $vendor;
 		$this->model = $model;
 		$this->color = $color;
@@ -29,7 +29,7 @@ class $Tv
 	private $screenSize;
 	private $channel = 0;
 	
-	public function __constructor($vendor,$model,$screenSize){
+	public function __construct($vendor,$model,$screenSize){
 		$this->vendor = $vendor;
 		$this->model = $model;
 		$this->screenSize = $screenSize;
@@ -49,7 +49,7 @@ class $Pen
 	private $color;
 	private $price;
 	
-	public function __constructor($color,$price){
+	public function __construct($color,$price){
 		$this->color = $color;
 		$this->price = $price;
 	}
@@ -64,7 +64,7 @@ class $Duck
 	private $weight;
 	private $sex;
 	
-	public function __constructor($weight,$sex){
+	public function __construct($weight,$sex){
 		$this->weight = $weight;
 		$this->sex = $sex;
 	}
@@ -88,7 +88,7 @@ class $Goods
 	private $name;
 	private $price;
 	
-	public function __constructor($vendor,$name,$price){
+	public function __construct($vendor,$name,$price){
 		$this->vendor = $vendor;
 		$this->name = $name;
 		$this->price = $price;

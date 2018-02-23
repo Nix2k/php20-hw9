@@ -1,12 +1,13 @@
 <?php
 	class News
 	{
-		private $title;
-		private $text;
-		private $date;
-		private $img = null;
+		public $title;
+		public $text;
+		public $date;
+		public $img = null;
 
-		public function __constructor($title, $text, $date, $img = null){
+		public function __construct($title, $text, $date, $img = null){
+			echo "$title|$text|$date|$img";
 			$this->title = $title;
 			$this->text = $text;
 			$this->date = $date;
