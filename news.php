@@ -32,6 +32,7 @@
 		public function printThis(){
 			echo '<article>';
 			echo "<h4>$this->title</h4>";
+			echo "<p><small><i>$this->date</i></small></p>";
 			echo '<div class="news-body">';
 			if (!empty($this->img)) {
 				echo "<img src='./img/$this->img' alt='$this->title'>";
