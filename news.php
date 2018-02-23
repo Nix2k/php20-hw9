@@ -7,7 +7,6 @@
 		public $img = null;
 
 		public function __construct($title, $text, $date, $img = null){
-			echo "$title|$text|$date|$img";
 			$this->title = $title;
 			$this->text = $text;
 			$this->date = $date;
@@ -35,7 +34,7 @@
 			echo "<h4>$this->title</h4>";
 			echo '<div class="news-body">';
 			if (!empty($this->img)) {
-				echo "<img src='".__DIR__."/img/$this->img' alt='$this->title'";
+				echo "<img src='./img/$this->img' alt='$this->title'>";
 			}
 			echo "<div class='news-text'>$this->text</div>";
 			echo '</div>';
