@@ -1,10 +1,10 @@
 <?php
 	class News
 	{
-		public $title;
-		public $text;
-		public $date;
-		public $img = null;
+		private $title;
+		private $text;
+		private $date;
+		private $img = null;
 
 		public function __construct($title, $text, $date, $img = null){
 			$this->title = $title;
