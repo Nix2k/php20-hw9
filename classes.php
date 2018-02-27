@@ -1,5 +1,5 @@
 <?php
-class $Car
+class Car
 {
 	private $vendor;
 	private $model;
@@ -22,7 +22,7 @@ class $Car
 	}	
 }
 
-class $Tv
+class Tv
 {
 	private $vendor;
 	private $model;
@@ -44,7 +44,7 @@ class $Tv
 	}
 }
 
-class $Pen
+class Pen
 {
 	private $color;
 	private $price;
@@ -59,7 +59,7 @@ class $Pen
 	}
 }
 
-class $Duck
+class Duck
 {
 	private $weight;
 	private $sex;
@@ -82,7 +82,7 @@ class $Duck
 	}
 }
 
-class $Goods
+class Goods
 {
 	private $vendor;
 	private $name;
