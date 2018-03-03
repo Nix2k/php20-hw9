@@ -7,18 +7,21 @@ class Car
 	private $velocity = 0;
 	private $acceleration = 0;
 	
-	public function __construct($vendor,$model,$color){
+	public function __construct($vendor, $model, $color)
+	{
 		$this->vendor = $vendor;
 		$this->model = $model;
 		$this->color = $color;
 	}
 	
-	public function startEngine(){
-		
+	public function startEngine()
+	{
+		echo 'Engine strarted';	
 	}
 	
-	public function stopEngine() {
-		
+	public function stopEngine() 
+	{
+		echo 'Engine stoped';	
 	}	
 }
 
@@ -29,17 +32,20 @@ class Tv
 	private $screenSize;
 	private $channel = 0;
 	
-	public function __construct($vendor,$model,$screenSize){
+	public function __construct($vendor, $model, $screenSize)
+	{
 		$this->vendor = $vendor;
 		$this->model = $model;
 		$this->screenSize = $screenSize;
 	}
 	
-	public function nextChannel(){
+	public function nextChannel()
+	{
 		$this->channel++;
 	}
 	
-	public function prevChannel(){
+	public function prevChannel()
+	{
 		$this->channel--;
 	}
 }
@@ -49,12 +55,14 @@ class Pen
 	private $color;
 	private $price;
 	
-	public function __construct($color,$price){
+	public function __construct($color, $price)
+	{
 		$this->color = $color;
 		$this->price = $price;
 	}
 	
-	public function getPrice(){
+	public function getPrice()
+	{
 		return $this->price;
 	}
 }
@@ -64,21 +72,25 @@ class Duck
 	private $weight;
 	private $sex;
 	
-	public function __construct($weight,$sex){
+	public function __construct($weight, $sex)
+	{
 		$this->weight = $weight;
 		$this->sex = $sex;
 	}
 	
-	public function sayQuack(){
-
+	public function sayQuack()
+	{
+		echo 'Quack';
 	}
 	
-	public function takeoff(){
-
+	public function takeoff()
+	{
+		echo "I'm flying";
 	}
 	
-	public function landing(){
-
+	public function landing()
+	{
+		echo "I'm not flying";
 	}
 }
 
@@ -88,15 +100,16 @@ class Goods
 	private $name;
 	private $price;
 	
-	public function __construct($vendor,$name,$price){
+	public function __construct($vendor, $name, $price)
+	{
 		$this->vendor = $vendor;
 		$this->name = $name;
 		$this->price = $price;
 	}
 	
-	public function getPrice(){
+	public function getPrice()
+	{
 		return $this->price;
 	}	
 }
-
 ?>

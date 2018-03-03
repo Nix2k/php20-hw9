@@ -6,30 +6,36 @@
 		private $date;
 		private $img = null;
 
-		public function __construct($title, $text, $date, $img = null){
+		public function __construct($title, $text, $date, $img = null)
+		{
 			$this->title = $title;
 			$this->text = $text;
 			$this->date = $date;
 			$this->img = $img;
 		}
 
-		public function getTitle(){
+		public function getTitle()
+		{
 			return $this->title;
 		}
 
-		public function getText(){
+		public function getText()
+		{
 			return $this->text;
 		}
 
-		public function getDate(){
+		public function getDate()
+		{
 			return $this->date;
 		}
 
-		public function getImg(){
+		public function getImg()
+		{
 			return $this->img;
 		}
 
-		public function printThis(){
+		public function printThis()
+		{
 			echo '<article>';
 			echo "<h4>$this->title</h4>";
 			echo "<p><small><i>$this->date</i></small></p>";
